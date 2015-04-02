@@ -8,7 +8,8 @@ rnd = random.Random()
 def rand_serial(n_bits=160):
     """
     :param n_bits: Generate a random serial number. The default
-    size of the serial number is 160 buts which is as good as a UUID
+    size of the serial number is 160 bits which is as good as a UUID
+    uniqueness
     """
     return rnd.randint(0,2**n_bits)
 
